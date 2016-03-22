@@ -1,0 +1,9 @@
+language: cpp
+script:
+  - "./install-tibia-maps"
+  - "./install-tibia-maps --no-markers"
+git:
+  depth: 1
+branches:
+  only:
+    - master
