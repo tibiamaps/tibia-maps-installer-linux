@@ -1,6 +1,6 @@
 # Tibia maps installer for Linux [![Build status](https://travis-ci.org/tibiamaps/tibia-maps-installer-linux.svg)](https://travis-ci.org/tibiamaps/tibia-maps-installer-linux)
 
-`install-tibia-maps` is a Bash script that downloads the latest version of the `Automap` data provided by [the tibia-map-data project](https://github.com/tibiamaps/tibia-map-data) and extracts it to the `~/.tibia/Automap` folder.
+`install-tibia-maps` is a Bash script that downloads the latest version of the `minimap` data provided by [the tibia-map-data project](https://github.com/tibiamaps/tibia-map-data) and extracts it to the `~/.local/share/CipSoft\ GmbH/Tibia/packages/Tibia` folder.
 
 ## Installation
 
@@ -16,7 +16,7 @@ By default, `install-tibia-maps` installs the Tibia maps files with markers incl
 
 ```
 $ ./install-tibia-maps
-Downloading & extracting `Automap-with-markers.zip` to `~/.tibia`…
+Downloading & extracting `minimap-with-markers.zip`…
 ######################################################################## 100.0%
 ```
 
@@ -24,7 +24,7 @@ Use the `--no-markers` option if you want the maps without markers:
 
 ```
 $ ./install-tibia-maps --no-markers
-Downloading & extracting `Automap-without-markers.zip` to `~/.tibia`…
+Downloading & extracting `minimap-without-markers.zip`…
 ######################################################################## 100.0%
 ```
 
