@@ -7,7 +7,7 @@
 Store this script locally and run it again every now and then to update your maps to the latest version.
 
 ```sh
-curl https://raw.githubusercontent.com/tibiamaps/tibia-maps-installer-linux/master/install-tibia-maps > ~/bin/install-tibia-maps; chmod +x ~/bin/install-tibia-maps
+curl https://raw.githubusercontent.com/tibiamaps/tibia-maps-installer-linux/main/install-tibia-maps > ~/bin/install-tibia-maps; chmod +x ~/bin/install-tibia-maps
 ```
 
 ## Usage
