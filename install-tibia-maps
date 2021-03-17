@@ -6,19 +6,23 @@ case "${1}" in
 	--grid)
 		echo 'Downloading & extracting `minimap-with-grid-overlay-and-markers.zip`…';
 		url='https://tibiamaps.io/downloads/minimap-with-grid-overlay-and-markers';
-		break;;
+		break;
+		;;
 	--grid-no-markers)
 		echo 'Downloading & extracting `minimap-with-grid-overlay-without-markers.zip`…';
 		url='https://tibiamaps.io/downloads/minimap-with-grid-overlay-without-markers';
-		break;;
+		break;
+		;;
 	--no-markers)
 		echo 'Downloading & extracting `minimap-without-markers.zip`…';
 		url='https://tibiamaps.io/downloads/minimap-without-markers';
-		break;;
+		break;
+		;;
 	*)
 		echo 'Downloading & extracting `minimap-with-markers.zip`…';
 		url='https://tibiamaps.io/downloads/minimap-with-markers';
-		break;;
+		break;
+		;;
 esac;
 zip_file_name="$(mktemp)";
 curl --progress-bar --location "${url}" > "${zip_file_name}";
