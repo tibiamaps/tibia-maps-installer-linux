@@ -13,8 +13,8 @@ case "${1}" in
 		echo 'Downloading & extracting `minimap-without-markers.zip`…';
 		url='https://tibiamaps.io/downloads/minimap-without-markers';
 	*)
-		echo 'Downloading & extracting `minimap-without-markers.zip`…';
-		url='https://tibiamaps.io/downloads/minimap-without-markers';
+		echo 'Downloading & extracting `minimap-with-markers.zip`…';
+		url='https://tibiamaps.io/downloads/minimap-with-markers';
 esac;
 zip_file_name="$(mktemp)";
 curl --progress-bar --location "${url}" > "${zip_file_name}";
