@@ -2,13 +2,28 @@
 
 TIBIA_DIR="${HOME}/.local/share/CipSoft GmbH/Tibia/packages/Tibia";
 mkdir -p "${TIBIA_DIR}";
-if [ "${1}" = '--no-markers' ]; then
-	echo 'Downloading & extracting `minimap-without-markers.zip`…';
-	url='https://tibiamaps.io/downloads/minimap-without-markers';
-else
-	echo 'Downloading & extracting `minimap-with-markers.zip`…';
-	url='https://tibiamaps.io/downloads/minimap-with-markers';
-fi;
+case "${1}" in
+	--grid)
+		echo 'Downloading & extracting `minimap-with-grid-overlay-and-markers.zip`…';
+		url='https://tibiamaps.io/downloads/minimap-with-grid-overlay-and-markers';
+		break;
+		;;
+	--grid-no-markers)
+		echo 'Downloading & extracting `minimap-with-grid-overlay-without-markers.zip`…';
+		url='https://tibiamaps.io/downloads/minimap-with-grid-overlay-without-markers';
+		break;
+		;;
+	--no-markers)
+		echo 'Downloading & extracting `minimap-without-markers.zip`…';
+		url='https://tibiamaps.io/downloads/minimap-without-markers';
+		break;
+		;;
+	*)
+		echo 'Downloading & extracting `minimap-with-markers.zip`…';
+		url='https://tibiamaps.io/downloads/minimap-with-markers';
+		break;
+		;;
+esac;
 zip_file_name="$(mktemp)";
 curl --progress-bar --location "${url}" > "${zip_file_name}";
 unzip -o -d "${TIBIA_DIR}" "${zip_file_name}";

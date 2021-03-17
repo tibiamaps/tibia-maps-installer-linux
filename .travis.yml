@@ -2,6 +2,8 @@ language: cpp
 script:
   - "./install-tibia-maps"
   - "./install-tibia-maps --no-markers"
+  - "./install-tibia-maps --grid"
+  - "./install-tibia-maps --grid-no-markers"
 git:
   depth: 1
 branches:
