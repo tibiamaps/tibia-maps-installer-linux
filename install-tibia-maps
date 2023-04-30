@@ -15,6 +15,10 @@ case "${1}" in
 		echo 'Downloading & extracting `minimap-without-markers.zip`…';
 		url='https://tibiamaps.io/downloads/minimap-without-markers';
 		;;
+	--grid-poi-markers)
+		echo 'Downloading & extracting `minimap-with-grid-overlay-and-poi-markers.zip`…';
+		url='https://tibiamaps.io/downloads/minimap-with-grid-overlay-and-poi-markers';
+		;;
 	*)
 		echo 'Downloading & extracting `minimap-with-markers.zip`…';
 		url='https://tibiamaps.io/downloads/minimap-with-markers';
