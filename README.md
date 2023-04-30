@@ -44,6 +44,14 @@ Downloading & extracting `minimap-with-grid-overlay-without-markers`…
 ######################################################################## 100.0%
 ```
 
+Use the `--grid-poi-markers` option if you want the maps with the overlay grid and [points of interest markers](https://tibiamaps.io/blog/speedrun-poi):
+
+```
+$ ./install-tibia-maps --grid-poi-markers
+Downloading & extracting `minimap-with-grid-overlay-and-poi-markers`…
+######################################################################## 100.0%
+```
+
 Example cron job to update the maps daily at midnight:
 
 ```cron
